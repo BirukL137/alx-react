@@ -12,7 +12,7 @@ $(document).ready(function() {
 
   function updateCounter() {
     count++;
-    $('#count').text(`${count} clicks on the button`);
+    $('#count').html(`${count} clicks on the button`);
   }
 
   const debouncedUpdateCounter = _.debounce(updateCounter);
