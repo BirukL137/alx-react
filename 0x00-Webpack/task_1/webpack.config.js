@@ -1,20 +1,14 @@
-const path = require("path");
+const path = require('path');
+
 
 module.exports = {
-  mode: "production",
+  mode: 'production',
   entry: {
-    index: path.resolve(__dirname, "js/dashboard_main.js"),
+    index: path.resolve(__dirname, 'js/dashboard_main.js'),
   },
+
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "public"),
-  },
-  module: {
-    rules: [
-      {
-        test: /\.m?js$/,
-        exclude: /node_modules/,
-      },
-    ],
-  },
-};
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public'),
+  }
+}
