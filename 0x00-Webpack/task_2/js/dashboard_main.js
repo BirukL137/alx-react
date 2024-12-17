@@ -1,6 +1,7 @@
 // Import jQuery and Lodash
 import $ from 'jquery';
 import _ from 'lodash';
+import '../css/main.css'
 
 // Initialize the count variable
 let count = 0;
